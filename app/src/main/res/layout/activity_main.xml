@@ -15,16 +15,28 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/relative_lower">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_rectangle_received"
+            android:hint="Enter your Message"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/listenButton"
+            android:paddingLeft="5dp"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Listen"
+            android:layout_alignParentEnd="true"
             android:id="@+id/listenButton"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
+            />
     </RelativeLayout>
     <!--<Button
         android:layout_width="wrap_content"
